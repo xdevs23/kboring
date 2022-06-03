@@ -41,10 +41,11 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
-        publications {
-            register<MavenPublication>("gpr") {
-                from(components["java"])
-            }
+    }
+
+    publications {
+        create<MavenPublication>("gpr") {
+            from(components["java"])
         }
     }
 }
