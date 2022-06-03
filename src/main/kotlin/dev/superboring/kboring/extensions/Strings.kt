@@ -1,4 +1,4 @@
-package kboring.extensions
+package dev.superboring.kboring.extensions
 
 internal infix fun Int.repeat(seq: String): String =
     (0 until this).fold("") { acc, _ -> "$acc$seq" }

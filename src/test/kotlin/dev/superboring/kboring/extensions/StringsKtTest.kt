@@ -1,5 +1,7 @@
-package kboring.extensions
+package dev.superboring.kboring.extensions
 
+import dev.superboring.kboring.extensions.linesAsString
+import dev.superboring.kboring.extensions.times
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

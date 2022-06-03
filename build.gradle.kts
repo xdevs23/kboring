@@ -5,7 +5,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "dev.superboring.lib.kt"
+group = "dev.superboring"
 version = "0.1.0-SNAPSHOT"
 
 repositories {
