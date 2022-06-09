@@ -2,6 +2,28 @@
 
 The library that makes your part more fun by providing the boring part.
 
+## How to use
+
+Add following maven repo to your `build.gradle.kts`:
+
+```
+maven("https://jitpack.io")
+```
+
+Add the dependency:
+
+
+```
+implementation("dev.superboring:kboring:<short commit hash>")
+```
+
+for example:
+
+```
+implementation("dev.superboring:kboring:63bc2278da")
+```
+
+
 ## License
 
 ```
