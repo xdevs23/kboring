@@ -5,7 +5,8 @@ import kotlin.reflect.KAnnotatedElement
 import kotlin.reflect.KParameter
 import kotlin.reflect.KProperty
 
-public val KClass<*>.allAnnotations get() = (allSuperclasses + this).flatMap { it.annotations }.toSet()
+public val KClass<*>.allAnnotations: Set<Annotation> get() =
+    (annotations + superclasses.flatMap { it.allAnnotations }).toSet()
 
 public inline fun <reified A : Annotation> KClass<*>.hasAnnotation(annotation: KClass<A>) =
     allAnnotations.any { it.annotationClass == annotation }
